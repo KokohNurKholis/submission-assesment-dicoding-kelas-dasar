@@ -5,13 +5,13 @@ function getBooks() {
 }
 
 function getBookById(id) {
-  const book = books[id];
+  let book = books[id];
 
   if (!book) {
     return null;
   }
 
-  return book;
+  return book.id;
 }
 
 function saveBook(book) {
